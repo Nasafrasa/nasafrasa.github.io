@@ -1,0 +1,115 @@
+/* Fonts */
+@font-face {
+    src: url(../fonts/Galactico-Basic.otf);
+    font-family: "Galactico";
+}
+@font-face {
+    src: url(../fonts/nasalization-rg.otf);
+    font-family: "Nasalization";
+}
+
+/* Animations */
+@keyframes titleAni {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.nav-and-footer p {
+    color: white;
+    font-family: "Nasalization";
+    margin: 10px;
+    font-size: small;
+}
+
+.navbar {
+    background-color: black;
+    padding: 8px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.navbar .title {
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    font-family: "Galactico";
+    font-size: xx-large;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.container1 {
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/background.jpg);
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 h1 {
+    animation: 1s ease-out 0s 1 titleAni;
+    scale: 300%;
+    font-family: "Nasalization";
+    filter: drop-shadow(0px 0px 10px black);
+    z-index: 0;
+    position:absolute;
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/stars.png);
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nasalization";
+}
+
+.footer {
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+
+
+
